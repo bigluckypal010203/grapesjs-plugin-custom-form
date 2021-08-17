@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>GrapesJS Plugin Forms</title>
+    <title>GrapesJS Plugin Custom Form</title>
     <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css">
     <script src="https://unpkg.com/grapesjs"></script>
-    <script src="dist/grapesjs-plugin-forms.min.js"></script>
+    <script src="dist/grapesjs-plugin-custom-form.min.js"></script>
     <style>
       body, html{ height: 100%; margin: 0;}
 
@@ -62,10 +62,13 @@
         storageManager:{autoload: 0},
         container : '#gjs',
         fromElement: true,
+        canvas: {
+          style: ['common.css']
+        },
 
-        plugins: ['grapesjs-plugin-forms'],
+        plugins: ['grapesjs-plugin-custom-form'],
         pluginsOpts: {
-          'grapesjs-plugin-forms': {}
+          'grapesjs-plugin-custom-form': {}
         }
       });
     </script>
